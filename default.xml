@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="rockchip-android"
-           fetch="."
-           review="https://github.com/rockchip-android/" />
+  <remote  name="rockchip-android" fetch="https://github.com/rockchip-android" />
   <default revision="master"
            remote="rockchip-android"
            sync-j="4" />
 
-  <project path="build" name="build" revision="master"/>
-  
+  <project remote="rockchip-android" path="TWRP" name="TWRP" revision="master"/>
+  <project remote="rockchip-android" path="external/ppp" name="external-ppp" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="build" name="build" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/liblights" name="hardware-rockchip-liblights" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="open-gapps" name="open-gapps" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="vendor/rockchip/common" name="vendor-rockchip-common" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="device/rockchip/common" name="device-rockchip-common" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="device/rockchip/rk3399" name="device-rockchip-rk3399" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="bootable/recovery" name="bootable-recovery" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="RKTools" name="RKTools" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="rkst" name="rkst" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="vendor/widevide" name="vendor-widevine" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/displayd" name="system-displayd" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="external/wlan_loader" name="external-wlan_loader" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/ntfs-3g" name="external-ntfs-3g" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/io" name="external-io" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/omx_il" name="hardware-rockchip-omx_il" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/librkvpu" name="hardware-rockchip-librkvpu" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/librga" name="hardware-rockchip-librga" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/libiep" name="hardware-rockchip-libiep" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/libgralloc" name="hardware-rockchip-libgralloc" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/jpeghw" name="hardware-rockchip-jpeghw" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/hwcomposer" name="hardware-rockchip-hwcomposer" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/camera" name="hardware-rockchip-camera" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/rockchip/audio" name="hardware-rockchip-audio" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/vold" name="system-vold" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/sepolicy" name="system-sepolicy" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/netd" name="system-netd" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/core" name="system-core" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/bt" name="system-bt" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/providers/MediaProvider" name="packages-providers-MediaProvider" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/inputmethods/LatinIME" name="packages-inputmethods-LatinIME" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/TVSettings" name="packages-apps-TVSettings" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Settings" name="packages-apps-Settings" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Music" name="packages-apps-Music" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Gallery2" name="packages-apps-Gallery2" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/ExactCalculator" name="packages-apps-ExactCalculator" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/DeskClock" name="packages-apps-DeskClock" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Camera2" name="packages-apps-Camera2" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Browser" name="packages-apps-Browser" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="packages/apps/Bluetooth" name="packages-apps-Bluetooth" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/realtek" name="hardware-realtek" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/libhardware" name="hardware-libhardware" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/broadcom/wlan" name="hardware-broadcom-wlan" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="hardware/broadcom/libbt" name="hardware-broadcom-libbt" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/support" name="frameworks-support" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/opt/net/wifi" name="frameworks-opt-net-wifi" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/opt/net/pppoe" name="frameworks-opt-net-pppoe" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/opt/net/ethernet" name="frameworks-opt-net-ethernet" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/native" name="frameworks-native" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/ex" name="frameworks-ex" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/base" name="frameworks-base" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="frameworks/av" name="frameworks-av" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/wpa_supplicant_8" name="external-wpa_supplicant_8" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/tinyalsa" name="external-tinyalsa" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/skia" name="external-skia" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/libjpeg-turbo" name="external-libjpeg-turbo" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/libiconv" name="external-libiconv" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="tools/test/connectivity" name="tools-test-connectivity" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="tools/external/gradle" name="tools-external-gradle" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="tools/external/fat32lib" name="tools-external-fat32lib" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="toolchain/binutils" name="toolchain-binutils" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/webservd" name="system-webservd" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/weaved" name="system-weaved" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/update_engine" name="system-update_engine" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/tpm" name="system-tmp" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/tools/aidl" name="system-tools-aidl" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/security" name="system-security" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/nvram" name="system-nvram" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/nativepower" name="system-nativepower" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/chromium-trace" name="external-chromium-trace" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="system/media" name="system-media" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/gatekeeper" name="system-gatekeeper" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/firewalld" name="system-firewalld" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/connectivity/shill" name="system-connectivity-shill" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/connectivity/dhcp_client" name="system-connectivity-dhcp_client" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/connectivity/manager" name="system-connectivity-manager" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="system/ca-certificates" name="system-ca-certificates" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="sdk" name="sdk" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/chromium-libpac" name="external-chromium-libpac" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="external/ceres-solver" name="external-ceres-solver" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="prebuilts/tools" name="prebuilts-tools" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="prebuilts/sdk" name="prebuilts-sdk" revision="rk3399-box-7.1"/>
+  <project remote="rockchip-android" path="external/cblas" name="external-cblas" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="prebuilts/qemu-kernel" name="prebuilts-qemu-kernel" revision="rk3328-box-7.1"/>
+  <project remote="rockchip-android" path="external/caliper" name="external-caliper" revision="rk3328-box-7.1"/>
 </manifest>
