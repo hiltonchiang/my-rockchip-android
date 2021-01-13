@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="rockchip-linux"
+           fetch="."
+           review="https://github.com/rockchip-android/" />
+  <default revision="master"
+           remote="rockchip-android"
+           sync-j="4" />
+
+  <project path="build" name="build" revision="master"/>
+  
+</manifest>
