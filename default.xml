@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="rockchip-linux"
+  <remote  name="rockchip-android"
            fetch="."
            review="https://github.com/rockchip-android/" />
   <default revision="master"
